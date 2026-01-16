@@ -1,0 +1,20 @@
+class Config:
+    # System
+    DEVICE = "cuda"  # If no GPU, it will automatically switch to cpu
+    SEED = 42
+
+    # Data Dimensions
+    EEG_CHANNELS = 64
+    TIME_STEPS = 200
+    MRI_SHAPE = (1, 32, 32, 32)  # Simplified 3D MRI
+
+    # Model Hyperparameters
+    LATENT_DIM = 128
+    VOCAB_SIZE = 1000
+    SEQ_LEN = 10
+
+    # Training Parameters
+    BATCH_SIZE = 8
+    META_LR_OUTER = 1e-3
+    META_LR_INNER = 0.01
+    EPOCHS = 10  # Reduced for demo purposes
